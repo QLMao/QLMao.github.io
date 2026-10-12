@@ -3,253 +3,293 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Qinglin Mao (毛庆霖)</title>
+<title>Qinglin Mao — Personal Homepage</title>
 <meta name="description" content="Qinglin Mao — PhD candidate in Computer Science. Document intelligence, LLM applications, and credit risk modeling." />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-<header class="site">
-  <div class="wrap">
-    <div class="topbar">
-      <h1 class="name">Qinglin Mao<span class="en">毛庆霖</span></h1>
-      <div class="lang-switch"><a href="index-zh.html">中文</a></div>
-    </div>
-    <p class="tagline">PhD Candidate in Computer Science &middot; Document Intelligence &middot; LLM Applications &middot; Credit Risk Modeling</p>
-    <p class="contact">
-      Ningbo, Zhejiang, China
-      <span class="sep">|</span>
-      <a href="mailto:Qinglin.Mao@nottingham.edu.cn">Qinglin.Mao@nottingham.edu.cn</a>
-      <span class="sep">|</span>
-      <a href="https://github.com/QLMao">github.com/QLMao</a>
-    </p>
-    <a class="cvbtn" href="https://github.com/QLMao/CV">Download CV &rarr;</a>
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ic-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+  <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="ic-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+  <symbol id="ic-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+  <symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="ic-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88"/></symbol>
+  <symbol id="ic-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="ic-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+  <symbol id="ic-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.9 7 22 12 19.5 17 22 15.8 13.9"/></symbol>
+  <symbol id="ic-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+  <symbol id="ic-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="ic-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.2 2.7 3 6 3s6-1.8 6-3v-5"/></symbol>
+  <symbol id="ic-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+</svg>
+
+<header class="masthead">
+  <div class="inner">
+    <span class="site-title">Qinglin Mao<span class="dot">.</span></span>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#patents">Patents</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#honors">Honors</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-<main class="wrap">
+<div class="layout">
 
-  <section>
-    <h2>About</h2>
-    <p>
-      I am a PhD candidate in Computer Science (financial risk management track) at the
-      University of Nottingham Ningbo China, supervised by Prof. Anthony Bellotti. My work sits at
-      the intersection of document image intelligence and machine learning for financial risk:
-      restoring and recognizing degraded document images, applying LLMs and retrieval-augmented
-      generation to complex documents, and building credit-risk scoring models on multi-source
-      heterogeneous data.
-    </p>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-
-    <div class="entry">
-      <div class="head">
-        <span class="title">University of Nottingham Ningbo China</span>
-        <span class="meta">2022.09 &ndash; 2026.12 (expected)</span>
-      </div>
-      <div class="sub">PhD, Computer Science (Financial Risk Management track) &middot; Full PhD Scholarship &middot; Supervisor: Prof. Anthony Bellotti</div>
-      <ul>
-        <li>Thesis: <em>Recognition-Oriented, Redundancy-Guided, and Efficient Document Image Restoration</em>.</li>
+  <aside class="sidebar">
+    <div class="top-line"></div>
+    <div class="pad">
+      <div class="avatar">QM</div>
+      <div class="name">Qinglin Mao<span class="alt">毛庆霖</span></div>
+      <div class="role">PhD Candidate, Computer Science</div>
+      <p class="bio">
+        Document intelligence, LLM &amp; RAG applications, and machine learning for credit risk.
+        University of Nottingham Ningbo China.
+      </p>
+      <ul class="contact-list">
+        <li><svg class="icon"><use href="#ic-pin"/></svg> Ningbo, Zhejiang, China</li>
+        <li><svg class="icon"><use href="#ic-mail"/></svg> <a href="mailto:Qinglin.Mao@nottingham.edu.cn">Qinglin.Mao@nottingham.edu.cn</a></li>
+        <li><svg class="icon"><use href="#ic-github"/></svg> <a href="https://github.com/QLMao">github.com/QLMao</a></li>
       </ul>
+      <a class="btn" href="https://github.com/QLMao/CV"><svg class="icon"><use href="#ic-download"/></svg> Download CV</a>
+      <div class="lang-row"><a href="index-zh.html"><svg class="icon"><use href="#ic-globe"/></svg> 中文版</a></div>
     </div>
+  </aside>
 
-    <div class="entry">
-      <div class="head">
-        <span class="title">Xi&rsquo;an Jiaotong-Liverpool University</span>
-        <span class="meta">2020.07 &ndash; 2021.03</span>
+  <main class="content">
+
+    <section id="about">
+      <h2><svg class="icon"><use href="#ic-compass"/></svg> Biography</h2>
+      <div class="card lede">
+        <p>
+          I am a PhD candidate in Computer Science (financial risk management track) at the University of
+          Nottingham Ningbo China, supervised by Prof. Anthony Bellotti. My research sits at the intersection
+          of <strong>document image intelligence</strong> and <strong>machine learning for financial risk</strong>:
+          restoring and recognizing degraded document images, applying LLMs and retrieval-augmented generation
+          to complex documents, and building credit-risk scoring models on multi-source heterogeneous data.
+        </p>
+        <p style="margin-top:12px">
+          I hold an MSc in Financial Computing (Distinction) from Xi&rsquo;an Jiaotong-Liverpool University and a
+          BSc in Information and Computing Science from NingboTech University. Alongside research I have several
+          years of experience as a university teaching assistant in machine learning and data analytics.
+        </p>
       </div>
-      <div class="sub">MSc, Financial Computing &middot; Distinction</div>
-      <ul>
-        <li>Thesis: <em>Adversarial Domain Adaptation for Crisis Classification</em>.</li>
+    </section>
+
+    <section id="education">
+      <h2><svg class="icon"><use href="#ic-cap"/></svg> Education</h2>
+
+      <div class="entry">
+        <div class="head"><span class="title">University of Nottingham Ningbo China</span><span class="when">2022 – 2026</span></div>
+        <div class="sub">PhD, Computer Science (Financial Risk Management track) · Full PhD Scholarship · Supervisor: Prof. Anthony Bellotti</div>
+        <p>Thesis: <em>Recognition-Oriented, Redundancy-Guided, and Efficient Document Image Restoration</em>.</p>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="title">Xi&rsquo;an Jiaotong-Liverpool University</span><span class="when">2020 – 2021</span></div>
+        <div class="sub">MSc, Financial Computing · Distinction</div>
+        <p>Thesis: <em>Adversarial Domain Adaptation for Crisis Classification</em>.</p>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="title">NingboTech University</span><span class="when">2016 – 2020</span></div>
+        <div class="sub">BSc, Information and Computing Science · GPA 4.01 / 5.0 · Ranked 13th in the major</div>
+        <p>Thesis: <em>Brain MRI lesion segmentation based on neural networks</em>.</p>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2><svg class="icon"><use href="#ic-compass"/></svg> Research Interests</h2>
+      <div class="grid-2">
+        <div class="ri">
+          <h3><svg class="icon"><use href="#ic-file"/></svg> Document Intelligence &amp; Vision</h3>
+          <p>Restoration, enhancement and OCR legibility of degraded documents; deep-learning and generative models for text-image reconstruction, leveraging text-structure, layout-redundancy and sparsity priors; efficient inference.</p>
+        </div>
+        <div class="ri">
+          <h3><svg class="icon"><use href="#ic-code"/></svg> LLM Applications &amp; Agents</h3>
+          <p>VLM–LLM collaboration on complex tasks; tool calling, task planning and multi-step workflow orchestration (e.g. LangGraph) for information extraction, analysis and decision support.</p>
+        </div>
+        <div class="ri">
+          <h3><svg class="icon"><use href="#ic-book"/></svg> Multimodal RAG</h3>
+          <p>Representation, indexing and use of multimodal information in RAG; knowledge conflicts between parametric and retrieved knowledge; conflict detection and evidence provenance.</p>
+        </div>
+        <div class="ri">
+          <h3><svg class="icon"><use href="#ic-shield"/></svg> Credit Risk Modeling</h3>
+          <p>Personal and corporate credit scoring, default and fraud detection, and interpretable risk prediction over multi-source heterogeneous financial data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2><svg class="icon"><use href="#ic-file"/></svg> Publications</h2>
+
+      <h3 style="margin:0 0 10px;font-size:15px;color:var(--muted)">Thesis-Related</h3>
+      <div class="pub">
+        <div class="t">ALDII: Adaptive Learning-based Document Image Inpainting to Enhance the Handwritten Chinese Character Legibility of Human and Machine.</div>
+        <div class="v">Neurocomputing, 2025.</div>
+        <div class="tags"><span class="tag solid">First author</span><span class="tag">SCI Q1 · CAS Zone 2 · IF 6.7</span><span class="tag">CCF-C</span></div>
+      </div>
+      <div class="pub">
+        <div class="t">High-Fidelity Text Refinement for ControlNet-Guided Latent Diffusion in Document Inpainting.</div>
+        <div class="v">Expert Systems with Applications, 2026.</div>
+        <div class="tags"><span class="tag solid">First author</span><span class="tag">SCI Q1 · CAS Zone 1 · IF 9.4</span><span class="tag">CCF-C</span></div>
+      </div>
+      <div class="pub">
+        <div class="t">SSD: Text-Aware Sparse Diffusion for Efficient Document Restoration.</div>
+        <div class="v">In preparation (Engineering Applications of Artificial Intelligence / Expert Systems with Applications).</div>
+        <div class="tags"><span class="tag solid">First author</span></div>
+      </div>
+
+      <h3 style="margin:22px 0 10px;font-size:15px;color:var(--muted)">Collaborative Papers</h3>
+      <div class="pub">
+        <div class="t">Improving the Accuracy of Flood Forecasting for Northeast China by the Correction of Global Forecast Rainfall Based on Deep Learning.</div>
+        <div class="v">Journal of Hydrology, 2024.</div>
+        <div class="tags"><span class="tag gold">Co-author</span><span class="tag">SCI Q1 · CAS Zone 1</span></div>
+      </div>
+      <div class="pub">
+        <div class="t">Enhancing the Performance of Runoff Prediction in Data-Scarce Hydrological Domains Using Advanced Transfer Learning.</div>
+        <div class="v">Resources, Environment and Sustainability, 2024.</div>
+        <div class="tags"><span class="tag gold">Co-author</span><span class="tag">SCI Q1 · CAS Zone 1</span></div>
+      </div>
+      <div class="pub">
+        <div class="t">LanternOperAR: A Hybrid Cultural Gift for Quality Education and Family Well-being.</div>
+        <div class="v">CHI Extended Abstracts, 2024.</div>
+        <div class="tags"><span class="tag gold">Second author</span></div>
+      </div>
+      <div class="pub">
+        <div class="t">LanternOperAR: Engaging Yue Opera Culture with Chinese Philosophy in Hybrid Gift through Interactive Experience.</div>
+        <div class="v">ACM Journal on Computing and Cultural Heritage, 2026.</div>
+        <div class="tags"><span class="tag gold">Co-author</span><span class="tag">SCI / A&amp;HCI</span></div>
+      </div>
+    </section>
+
+    <section id="patents">
+      <h2><svg class="icon"><use href="#ic-award"/></svg> Invention Patents</h2>
+      <div class="block2">
+        <div class="entry" style="border-left-color:var(--accent)">
+          <div class="head"><span class="title">Granted</span><span class="when">3</span></div>
+          <ul>
+            <li>“A text image restoration method, apparatus and storage medium” — first inventor, 2025.</li>
+            <li>“A method and system for enhancing character recognition in document images” — first inventor, 2026 (No.&nbsp;202511592626.0).</li>
+            <li>“An AR-based cultural interaction method, apparatus and storage medium” — second inventor.</li>
+          </ul>
+        </div>
+        <div class="entry" style="border-left-color:var(--gold)">
+          <div class="head"><span class="title">Under Examination</span><span class="when">1</span></div>
+          <ul>
+            <li>“A document image restoration method and system” — first inventor.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2><svg class="icon"><use href="#ic-code"/></svg> Projects</h2>
+
+      <div class="entry">
+        <div class="head"><span class="title">Ningbo Personal Credit Scoring System — credit risk assessment for banks</span><span class="when">2023 – 2024</span></div>
+        <div class="sub">Research Assistant / Technical Lead · Ningbo Finance &amp; Regulatory Bureau × Big Data Bureau × UNNC</div>
+        <ul>
+          <li>Built a personal credit risk scoring model for banks and other financial institutions on multi-department government data.</li>
+          <li>Engineered features across social insurance, provident fund, medical insurance, public security and taxation; RFM sequential features.</li>
+          <li>Gradient boosting classifier reached <strong>AUC 0.9179</strong>; results published to an API-queryable external database.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="title">Recognition-Oriented and Efficient Document Image Restoration</span><span class="when">2022 – 2026</span></div>
+        <div class="sub">PhD Research · University of Nottingham Ningbo China</div>
+        <ul>
+          <li>Full pipeline from data processing and model training to OCR / human evaluation.</li>
+          <li>Domain-adaptation framework, text-semantics-guided high-fidelity restoration, and text-aware sparse diffusion for lower inference cost.</li>
+          <li>Outputs: 2 first-author SCI papers, 1 in preparation, 2 granted patents, 1 patent under examination.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="title">Knowledge-Graph &amp; LLM Based Financial Time-Series Forecasting</span><span class="when">2024 – 2025</span></div>
+        <div class="sub">Core Developer · Business School, University of Nottingham Ningbo China</div>
+        <ul>
+          <li>Intelligent pipeline integrating corporate-relation knowledge graphs, industry links and market time series for multi-timescale prediction.</li>
+          <li>Entity-relation modeling, heterogeneous data integration, LLM context organization, prediction evaluation.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="title">BirdTalk: Wild Bird Acoustic Recognition System</span><span class="when">2018</span></div>
+        <div class="sub">Team Leader · Alibaba Cloud Geek Challenge GXIC, National 3rd Place</div>
+        <ul>
+          <li>Raspberry-Pi + microphone-array IoT system for wild bird acoustic monitoring.</li>
+          <li>ICA source separation, FFT spectral features, AutoEncoder voiceprints, decision-tree filtering, KNN classification.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2><svg class="icon"><use href="#ic-tool"/></svg> Skills</h2>
+      <div class="card">
+        <div class="skill"><span class="k">Deep Learning &amp; Data Analysis:</span> Python, PyTorch, scikit-learn, pandas; processing, modelling, validation and error analysis of image, text and time-series data.</div>
+        <div class="skill"><span class="k">LLM Applications:</span> vLLM local inference, multimodal document parsing, tool calling, task orchestration; LangChain / LCEL, LangGraph, MCP.</div>
+        <div class="skill"><span class="k">Retrieval &amp; Knowledge Organization:</span> dense, sparse and hybrid retrieval, reranking, graph retrieval, multimodal integration; MySQL, Neo4j.</div>
+        <div class="skill" style="margin-bottom:0"><span class="k">Research &amp; Teaching:</span> English academic writing, cross-disciplinary collaboration, English-medium course tutoring; Unity / C#.</div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2><svg class="icon"><use href="#ic-cap"/></svg> Teaching &amp; Service</h2>
+      <div class="entry">
+        <div class="head"><span class="title">Teaching Assistant</span><span class="when">2023 – 2026</span></div>
+        <div class="sub">University of Nottingham Ningbo China</div>
+        <ul>
+          <li>Machine Learning</li>
+          <li>FinTech Data Analytics and Machine Learning</li>
+          <li>Data Modelling and Analysis</li>
+          <li>Mathematics for Computer Scientists</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="head"><span class="title">Courses I Can Teach</span></div>
+        <ul>
+          <li>Data Structures and Algorithms · Artificial Intelligence / Machine Learning</li>
+          <li>Data Analytics and Modelling · Financial Data Analysis</li>
+          <li>Credit Risk Management · Audit Informatization and Intelligent Auditing</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="head"><span class="title">Academic Service</span></div>
+        <p>Reviewer for <em>ACM Journal on Computing and Cultural Heritage</em> (JOCCH).</p>
+      </div>
+    </section>
+
+    <section id="honors">
+      <h2><svg class="icon"><use href="#ic-award"/></svg> Honors</h2>
+      <ul class="honors">
+        <li><svg class="icon"><use href="#ic-award"/></svg> Full PhD Scholarship, University of Nottingham Ningbo China <span class="yr">2022–2026</span></li>
+        <li><svg class="icon"><use href="#ic-award"/></svg> Alibaba Cloud Geek Challenge GXIC, National 3rd Place <span class="yr">2018</span></li>
+        <li><svg class="icon"><use href="#ic-award"/></svg> Zhejiang “Internet+” Innovation and Entrepreneurship Competition, Provincial Silver Award <span class="yr">2019</span></li>
+        <li><svg class="icon"><use href="#ic-award"/></svg> Zhejiang College Student Career Planning Competition, 3rd Prize; “Loctek” Innovation Scholarship <span class="yr">2019</span></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="entry">
-      <div class="head">
-        <span class="title">NingboTech University</span>
-        <span class="meta">2016.09 &ndash; 2020.07</span>
-      </div>
-      <div class="sub">BSc, Information and Computing Science &middot; GPA 4.01 / 5.0 &middot; Ranked 13th in the major</div>
-      <ul>
-        <li>Thesis: <em>Brain MRI lesion segmentation based on neural networks</em>.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Research Interests</h2>
-    <ul>
-      <li><strong>Document Intelligence and Computer Vision:</strong> restoration, enhancement, and OCR legibility of degraded documents; deep-learning and generative models for text-image reconstruction, leveraging priors such as text structure, layout redundancy, and text-image sparsity; efficient inference.</li>
-      <li><strong>LLM Applications and Agent Workflows:</strong> collaboration between VLMs and LLMs on complex tasks; tool calling, task planning, and multi-step workflow orchestration (e.g.&nbsp;LangGraph) for information extraction, analysis, and decision support.</li>
-      <li><strong>Multimodal RAG and Knowledge Conflicts:</strong> representation, indexing, and use of multimodal information in RAG; knowledge conflicts between parametric and retrieved knowledge; conflict detection, evidence provenance, and retrieval-side optimization; estimation and characterization of LLMs&rsquo; internal parametric knowledge.</li>
-      <li><strong>Credit Risk and Financial Risk Modeling:</strong> personal and corporate credit scoring, default and fraud detection, and interpretable risk prediction over multi-source heterogeneous government and financial data.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Publications</h2>
-
-    <h3>Thesis-Related</h3>
-    <ol class="pubs">
-      <li>
-        <span class="pub-title">ALDII: Adaptive Learning-based Document Image Inpainting to Enhance the Handwritten Chinese Character Legibility of Human and Machine.</span>
-        <span class="pub-venue">Neurocomputing</span>, 2025.
-        <span class="pub-tag">First author</span>
-        <span class="pub-tag">SCI Q1 &middot; CAS Zone 2 &middot; IF 6.7</span>
-        <span class="pub-tag">CCF-C</span>
-      </li>
-      <li>
-        <span class="pub-title">High-Fidelity Text Refinement for ControlNet-Guided Latent Diffusion in Document Inpainting.</span>
-        <span class="pub-venue">Expert Systems with Applications</span>, 2026.
-        <span class="pub-tag">First author</span>
-        <span class="pub-tag">SCI Q1 &middot; CAS Zone 1 &middot; IF 9.4</span>
-        <span class="pub-tag">CCF-C</span>
-      </li>
-      <li>
-        <span class="pub-title">SSD: Text-Aware Sparse Diffusion for Efficient Document Restoration.</span>
-        In preparation (Engineering Applications of Artificial Intelligence / Expert Systems with Applications).
-        <span class="pub-tag">First author</span>
-      </li>
-    </ol>
-
-    <h3>Collaborative Papers</h3>
-    <ol class="pubs">
-      <li>
-        <span class="pub-title">Improving the Accuracy of Flood Forecasting for Northeast China by the Correction of Global Forecast Rainfall Based on Deep Learning.</span>
-        <span class="pub-venue">Journal of Hydrology</span>, 2024. <span class="pub-tag">Co-author</span> <span class="pub-tag">SCI Q1 &middot; CAS Zone 1</span>
-      </li>
-      <li>
-        <span class="pub-title">Enhancing the Performance of Runoff Prediction in Data-Scarce Hydrological Domains Using Advanced Transfer Learning.</span>
-        <span class="pub-venue">Resources, Environment and Sustainability</span>, 2024. <span class="pub-tag">Co-author</span> <span class="pub-tag">SCI Q1 &middot; CAS Zone 1</span>
-      </li>
-      <li>
-        <span class="pub-title">LanternOperAR: A Hybrid Cultural Gift for Quality Education and Family Well-being.</span>
-        <span class="pub-venue">CHI Extended Abstracts</span>, 2024. <span class="pub-tag">Second author</span>
-      </li>
-      <li>
-        <span class="pub-title">LanternOperAR: Engaging Yue Opera Culture with Chinese Philosophy in Hybrid Gift through Interactive Experience.</span>
-        <span class="pub-venue">ACM Journal on Computing and Cultural Heritage</span>, 2026. <span class="pub-tag">Co-author</span> <span class="pub-tag">SCI / A&amp;HCI</span>
-      </li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>Invention Patents</h2>
-    <div class="patent-row">
-      <div class="k">Granted</div>
-      <div>
-        &ldquo;A text image restoration method, apparatus and storage medium,&rdquo; first inventor, 2025;
-        &ldquo;A method and system for enhancing character recognition in document images,&rdquo; first inventor, 2026 (Patent No. 202511592626.0);
-        &ldquo;An AR-based cultural interaction method, apparatus and storage medium,&rdquo; second inventor.
-      </div>
-    </div>
-    <div class="patent-row">
-      <div class="k">Under examination</div>
-      <div>&ldquo;A document image restoration method and system,&rdquo; first inventor.</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-
-    <div class="entry">
-      <div class="head">
-        <span class="title">Ningbo Personal Credit Scoring System (Credit Risk Assessment for Banks)</span>
-        <span class="meta">2023 &ndash; 2024</span>
-      </div>
-      <div class="sub">Research Assistant / Technical Lead &middot; Ningbo Finance and Regulatory Bureau &times; Ningbo Big Data Bureau &times; UNNC</div>
-      <ul>
-        <li>Supported by the Ningbo &ldquo;Fan 3315 Plan&rdquo;, the Ningbo Finance and Regulatory Bureau, and the Ningbo Big Data Bureau; aimed at providing banks and other financial institutions with more accurate credit risk assessments and key predictive factors.</li>
-        <li>Developed a personal credit risk scoring model on multi-department government data; cleaned, integrated, and engineered features from heterogeneous sources (social insurance, housing provident fund, medical insurance, public security, taxation, market supervision); built static features via encoding/binning and sequential features via RFM principles.</li>
-        <li>Defined risk entities by risk behaviors (housing provident fund loan delinquency; dishonest judgment debtor) to form supervised labels; a gradient boosting classifier achieved <strong>AUC 0.9179</strong>, significantly outperforming the baseline.</li>
-        <li>Results were anonymized, reviewed, and published to an external database queryable through an API.</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="head">
-        <span class="title">Recognition-Oriented and Efficient Document Image Restoration</span>
-        <span class="meta">2022 &ndash; 2026</span>
-      </div>
-      <div class="sub">PhD Research &middot; University of Nottingham Ningbo China</div>
-      <ul>
-        <li>Built a complete pipeline from data processing and model training to OCR / human evaluation, centered on text legibility, contextual redundancy, and diffusion-model efficiency.</li>
-        <li>Proposed a domain-adaptation restoration framework, a text-semantics-guided high-fidelity restoration method, and a text-aware sparse diffusion method reducing inference cost while preserving quality.</li>
-        <li>Outputs: 2 first-author SCI papers, 1 paper in preparation, 2 granted invention patents, 1 patent under substantive examination.</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="head">
-        <span class="title">Knowledge-Graph and LLM Based Financial Time-Series Forecasting System</span>
-        <span class="meta">2024 &ndash; 2025</span>
-      </div>
-      <div class="sub">Core Developer &middot; Business School, University of Nottingham Ningbo China</div>
-      <ul>
-        <li>Developed an intelligent pipeline integrating corporate-relation knowledge graphs, industry associations, and time-series market data for multi-timescale predictions and strategy recommendations.</li>
-        <li>Responsible for algorithm and backend development: entity-relation modeling, heterogeneous data integration, LLM context organization, prediction evaluation, and strategy output.</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="head">
-        <span class="title">BirdTalk: Wild Bird Acoustic Recognition System</span>
-        <span class="meta">2018</span>
-      </div>
-      <div class="sub">Team Leader &middot; Alibaba Cloud Geek Challenge GXIC, National 3rd Place</div>
-      <ul>
-        <li>Led a four-person team to build a Raspberry-Pi and microphone-array based IoT system for wild bird acoustic monitoring.</li>
-        <li>Designed the full pipeline: ICA source separation, FFT spectral features, AutoEncoder &ldquo;voiceprint&rdquo; extraction, decision-tree filtering, and KNN species classification.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <div class="skill"><span class="k">Deep Learning &amp; Data Analysis:</span> Python, PyTorch, scikit-learn, pandas; processing, modeling, validation, and error analysis of image, text, and time-series data.</div>
-    <div class="skill"><span class="k">LLM Applications:</span> local inference deployment with vLLM, multimodal document parsing, tool calling, and task orchestration; traceable workflows with LangChain / LCEL, LangGraph, and MCP.</div>
-    <div class="skill"><span class="k">Retrieval &amp; Knowledge Organization:</span> dense, sparse, and hybrid retrieval, reranking, graph retrieval, and multimodal data integration; MySQL and Neo4j.</div>
-    <div class="skill"><span class="k">Research &amp; Teaching:</span> English academic writing, cross-disciplinary collaboration, and English-medium course tutoring; Unity / C# interactive systems.</div>
-  </section>
-
-  <section>
-    <h2>Teaching &amp; Service</h2>
-    <div class="entry">
-      <div class="head">
-        <span class="title">Teaching Assistant</span>
-        <span class="meta">2023 &ndash; 2026</span>
-      </div>
-      <div class="sub">University of Nottingham Ningbo China</div>
-      <ul>
-        <li>Laboratory teaching and coding support for Machine Learning; FinTech Data Analytics and Machine Learning; Data Modelling and Analysis; Mathematics for Computer Scientists.</li>
-      </ul>
-    </div>
-    <div class="entry">
-      <div class="head"><span class="title">Courses I Can Teach</span></div>
-      <div class="sub">Data Structures and Algorithms; Artificial Intelligence / Machine Learning; Data Analytics and Modelling; Financial Data Analysis; Credit Risk Management; Audit Informatization and Intelligent Auditing.</div>
-    </div>
-    <div class="entry">
-      <div class="head"><span class="title">Academic Service</span></div>
-      <div class="sub">Reviewer for ACM Journal on Computing and Cultural Heritage (JOCCH).</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Honors</h2>
-    <ul>
-      <li>Full PhD Scholarship, University of Nottingham Ningbo China &mdash; 2022&ndash;2026</li>
-      <li>Alibaba Cloud Geek Challenge GXIC, National 3rd Place &mdash; 2018</li>
-      <li>Zhejiang &ldquo;Internet+&rdquo; Innovation and Entrepreneurship Competition, Provincial Silver Award &mdash; 2019</li>
-      <li>Zhejiang College Student Career Planning Competition, 3rd Prize; &ldquo;Loctek&rdquo; Innovation Scholarship &mdash; 2019</li>
-    </ul>
-  </section>
-
-</main>
+  </main>
+</div>
 
 <footer class="site">
-  <div class="wrap">&copy; 2026 Qinglin Mao &middot; <a href="index-zh.html">中文版</a></div>
+  <div class="inner">
+    <span>© 2026 Qinglin Mao (毛庆霖)</span>
+    <span><a href="index-zh.html">中文版</a> · <a href="https://github.com/QLMao/CV">CV</a> · <a href="https://github.com/QLMao">GitHub</a></span>
+  </div>
 </footer>
 
 </body>
